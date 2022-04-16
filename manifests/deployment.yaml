@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: ieee
-        image: hasanalperen/ieee:imageversion
+        image: hasanalperen/itu-ieee-ras:imageversion
         ports:
         - containerPort: 5000
