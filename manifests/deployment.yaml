@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app-deployment
+  name: ieee-deployment
   labels:
-    app: my-app
+    app: ieee
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: my-app
+      app: ieee
   template:
     metadata:
       labels:
-        app: my-app
+        app: ieee
     spec:
       containers:
-      - name: my-app
-        image: hasanalperen/myapp:imageversion
+      - name: ieee
+        image: hasanalperen/ieee:imageversion
         ports:
         - containerPort: 5000
